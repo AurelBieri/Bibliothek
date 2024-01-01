@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buch.cs" />
+    <Compile Include="CD.cs" />
+    <Compile Include="DVD.cs" />
+    <Compile Include="Hörbuch.cs" />
+    <Compile Include="Medium.cs" />
+    <Compile Include="Musik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
