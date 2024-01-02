@@ -8,8 +8,8 @@ namespace Library
 {
     public abstract class CD: Medium, IAusleihen, IOutput
     {
-        public int _dauer;
-        public float _preis;
+        private int _dauer;
+        private float _preis;
         public int Anzahltage { get; set; }
 
         public CD(string name, int artikelid, int erscheinungsjahr, int dauer, float preis) : base(name, artikelid, erscheinungsjahr)
@@ -46,7 +46,7 @@ namespace Library
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes."+ "Was  released in " + getErscheinungsjahr()+ "Costs: "+ getPreis(); ;
         }
 
-        public float ausleihenPreis()
+        public double ausleihenPreis()
         {
             if(Anzahltage < 10)
             {
@@ -54,7 +54,7 @@ namespace Library
             }
             else
             {
-                return (Anzahltage * 5) / 100;
+                return (Anzahltage * 5.0) / 10.0;
             }
         }
     }

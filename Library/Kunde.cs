@@ -8,8 +8,8 @@ namespace Library
 {
     public class Kunde: Person, IOutput
     {
-        public int _kundennr;
-        public List<Medium> _ausgeliehen = new List<Medium>();
+        private int _kundennr;
+        private List<Medium> _ausgeliehen = new List<Medium>();
 
         public Kunde(string vorname, string nachname, int alter, int kundennr, List<Medium> ausgeliehen, int anzahltage) : base(vorname, nachname, alter)
         {
@@ -48,7 +48,7 @@ namespace Library
                 }
                 else
                 {
-                    Console.WriteLine(m._name + "Kann nicht ausgeliehen werden.");
+                    Console.WriteLine(m.getName() + "Kann nicht ausgeliehen werden.");
                 }
             }
         }
@@ -62,7 +62,7 @@ namespace Library
             }
             else
             {
-                Console.WriteLine(medium._name + "Kann nicht ausgeliehen werden.");
+                Console.WriteLine(medium.getName() + "Kann nicht ausgeliehen werden.");
             }
             
         }

@@ -8,9 +8,9 @@ namespace Library
 {
     public abstract class Person
     {
-        public string _vorname;
-        public string _nachname;
-        public int _alter;
+        private string _vorname;
+        private string _nachname;
+        private int _alter;
 
         public Person(string vorname, string nachname, int alter)
         {

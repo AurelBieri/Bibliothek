@@ -8,9 +8,9 @@ namespace Library
 {
     public abstract class Medium
     {
-        public string _name;
-        public int _artikelid;
-        public int _erscheinungsjahr;
+        private string _name;
+        private int _artikelid;
+        private int _erscheinungsjahr;
 
         public Medium(string name,int artikelid, int erscheinungsjahr)
         {

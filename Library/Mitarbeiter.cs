@@ -8,9 +8,9 @@ namespace Library
 {
     public class Mitarbeiter: Person, IOutput
     {
-        public int _mitarbeiterid;
-        public float _lohn;
-        public string _rolle;
+        private int _mitarbeiterid;
+        private float _lohn;
+        private string _rolle;
         
 
         public Mitarbeiter(string vorname, string nachname, int alter, int mitarbeiterid, float lohn, string rolle) : base(vorname, nachname, alter)

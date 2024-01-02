@@ -8,7 +8,7 @@ namespace Library
 {
     internal interface IAusleihen
     {
-       float ausleihenPreis();
+       double ausleihenPreis();
         int Anzahltage { get; set; }
     }
 }

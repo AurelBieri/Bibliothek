@@ -8,10 +8,10 @@ namespace Library
 {
     public class DVD : Medium, IAusleihen, IOutput
     {
-        public int _dauer;
-        public string _auflösung;
-        public string _genre;
-        public float _preis;
+        private int _dauer;
+        private string _auflösung;
+        private string _genre;
+        private float _preis;
         public int Anzahltage { get; set; }
 
         public DVD(string name, int artikelid, int erscheinungsjahr, int dauer, string auflösung, string genre, float preis) : base(name, artikelid, erscheinungsjahr)
@@ -21,6 +21,16 @@ namespace Library
             setGenre(genre);
             setPreis(preis);
 
+        }
+
+        public int getanzahltage()
+        {
+            return Anzahltage;
+        }
+
+        public void setanzahltage(int anz)
+        {
+            Anzahltage = anz;
         }
 
         public int getDauer()
@@ -65,18 +75,18 @@ namespace Library
         }
         public string Output()
         {
-            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. With a resolution of "+getAuflösung()+". Genre: " + getGenre() + "Was  released in " + getErscheinungsjahr()+ "Costs: "+ getPreis(); ;
+            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. With a resolution of "+getAuflösung()+". Genre: " + getGenre() + "Was  released in " + getErscheinungsjahr()+ "Costs: "+ getPreis() ; 
         }
 
-        public float ausleihenPreis()
+        public double ausleihenPreis()
         {
-            if (Anzahltage < 10)
+            if (getanzahltage() < 10)
             {
                 return 0;
             }
             else
             {
-                return (Anzahltage * 10) / 100;
+                return ((getanzahltage() * 10.0) / 100.0)  ;
             }
         }
     }

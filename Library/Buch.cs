@@ -8,9 +8,9 @@ namespace Library
 {
     public class Buch : Medium, IAusleihen, IOutput
     {
-        public int _anzseiten;
-        public string _genre;
-        public float _preis;
+        private int _anzseiten;
+        private string _genre;
+        private float _preis;
         public  int Anzahltage { get; set; }
 
         public Buch(string name, int artikelid, int erscheinungsjahr, int anzseiten, string genre, float preis) : base(name, artikelid, erscheinungsjahr)  
@@ -57,7 +57,7 @@ namespace Library
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has "+ getAnzSeiten()+" Pages. Genre: "+ getGenre()+ "Was  released in "+ getErscheinungsjahr()+"Costs: "+ getPreis(); ;
         }
 
-        public float ausleihenPreis()
+        public double ausleihenPreis()
         {
             if (Anzahltage < 10)
             {
@@ -65,7 +65,7 @@ namespace Library
             }
             else
             {
-                return (Anzahltage * 3) / 100;
+                return ((Anzahltage * 3.0) / 100.0);
             }
         }
     }

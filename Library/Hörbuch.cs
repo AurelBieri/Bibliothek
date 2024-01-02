@@ -8,7 +8,7 @@ namespace Library
 {
     public class Hörbuch: CD, IAusleihen, IOutput
     {
-        public string _genre;
+        private string _genre;
 
         public Hörbuch(string name, int artikelid, int erscheinungsjahr, int dauer, float preis, string genre) : base(name, artikelid, erscheinungsjahr,dauer, preis)
         {

@@ -8,8 +8,8 @@ namespace Library
 {
     public class Musik: CD, IOutput
     {
-        public string _sänger;
-        public string _musikstil;
+        private string _sänger;
+        private string _musikstil;
 
         public Musik(string name, int artikelid, int erscheinungsjahr, int dauer, float preis, string sänger, string musikstil) : base(name, artikelid, erscheinungsjahr, dauer, preis)
         {
