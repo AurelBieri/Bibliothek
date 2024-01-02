@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class DVD : Medium
+    public class DVD : Medium, IAusleihen, IOutput
     {
         public int _dauer;
-        public int _auflösung;
+        public string _auflösung;
         public string _genre;
         public float _preis;
+        public int Anzahltage { get; set; }
 
-        public DVD(string name, int artikelid, int erscheinungsjahr, int dauer,int auflösung, string genre, float preis) : base(name, artikelid, erscheinungsjahr)
+        public DVD(string name, int artikelid, int erscheinungsjahr, int dauer, string auflösung, string genre, float preis) : base(name, artikelid, erscheinungsjahr)
         {
             setDauer(dauer);
             setAuflösung(auflösung);
@@ -31,12 +32,12 @@ namespace Library
         {
             _dauer = dauer;
         }
-        public int getAuflösung()
+        public string getAuflösung()
         {
             return _auflösung;
         }
 
-        public void setAuflösung(int auflösung)
+        public void setAuflösung(string auflösung)
         {
             _auflösung = auflösung;
         }
@@ -62,9 +63,21 @@ namespace Library
         {
             return "DVD: ";
         }
-        public override string Output()
+        public string Output()
         {
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. With a resolution of "+getAuflösung()+". Genre: " + getGenre() + "Was  released in " + getErscheinungsjahr()+ "Costs: "+ getPreis(); ;
+        }
+
+        public float ausleihenPreis()
+        {
+            if (Anzahltage < 10)
+            {
+                return 0;
+            }
+            else
+            {
+                return (Anzahltage * 10) / 100;
+            }
         }
     }
 }

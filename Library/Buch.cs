@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Buch : Medium
+    public class Buch : Medium, IAusleihen, IOutput
     {
         public int _anzseiten;
         public string _genre;
         public float _preis;
+        public  int Anzahltage { get; set; }
 
         public Buch(string name, int artikelid, int erscheinungsjahr, int anzseiten, string genre, float preis) : base(name, artikelid, erscheinungsjahr)  
         {
@@ -51,9 +52,21 @@ namespace Library
         {
             return "Book: ";
         }
-        public override string Output() 
+        public string Output() 
         {
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has "+ getAnzSeiten()+" Pages. Genre: "+ getGenre()+ "Was  released in "+ getErscheinungsjahr()+"Costs: "+ getPreis(); ;
+        }
+
+        public float ausleihenPreis()
+        {
+            if (Anzahltage < 10)
+            {
+                return 0;
+            }
+            else
+            {
+                return (Anzahltage * 3) / 100;
+            }
         }
     }
 }

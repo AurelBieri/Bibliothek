@@ -42,11 +42,11 @@ namespace Library
         {
             _erscheinungsjahr = value;
         }
-        public abstract string Output();
 
         public virtual string getTypeInformation()
         {
             return "Medium:";
         }
+
     }
 }

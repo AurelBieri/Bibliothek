@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Musik: CD
+    public class Musik: CD, IOutput
     {
         public string _sänger;
         public string _musikstil;
@@ -40,7 +40,7 @@ namespace Library
         {
             return "Musik: ";
         }
-        public override string Output()
+        public new string Output()
         {
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes." + "Was  released in " + getErscheinungsjahr() + "Costs: " + getPreis()+ "Singer: "+ getSänger()+"Style of music: "+getMusikstil(); ;
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Mitarbeiter: Person
+    public class Mitarbeiter: Person, IOutput
     {
         public int _mitarbeiterid;
         public float _lohn;
@@ -52,7 +52,7 @@ namespace Library
         {
             return "Mitarbeiter: ";
         }
-        public override string Output()
+        public string Output()
         {
             return getTypeInformation() + "Name: " + getVorname() + getNachname()+", "+getAlter()+"years old, "+ " with the Id " + getMitarbeiterid() + " has a salary of " + getLohn() + " Role: " + getRolle(); ;
         }

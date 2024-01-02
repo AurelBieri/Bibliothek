@@ -42,7 +42,6 @@ namespace Library
         {
             _alter = value;
         }
-        public abstract string Output();
 
         public virtual string getTypeInformation()
         {

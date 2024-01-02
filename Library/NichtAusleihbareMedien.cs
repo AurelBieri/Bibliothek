@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class NichtAusleihbareMedien: Medium
+    public class NichtAusleihbareMedien: Medium, IOutput
     {
         public NichtAusleihbareMedien(string name, int artikelid, int erscheinungsjahr) : base(name, artikelid, erscheinungsjahr)
         {
@@ -15,7 +15,7 @@ namespace Library
         }
 
         
-        public override string Output()
+        public string Output()
         {
             return "Name: " + getName() + " with the Id " + getArtikelid() +  "Was  released in " + getErscheinungsjahr() +" and isn't  available."; ;
         }
