@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class DVD : Medium, IAusleihen, IOutput
+    public class DVD : Medium, IAusleihen
     {
         private int _dauer;
         private string _auflösung;
@@ -73,7 +73,7 @@ namespace Library
         {
             return "DVD: ";
         }
-        public string Output()
+        public override string Output()
         {
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. With a resolution of "+getAuflösung()+". Genre: " + getGenre() + " It was released in " + getErscheinungsjahr()+ " Costs: "+ getPreis() ; 
         }

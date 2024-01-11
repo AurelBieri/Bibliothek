@@ -50,6 +50,7 @@
     <Compile Include="Interface\IAusleihen.cs" />
     <Compile Include="Interface\IOutput.cs" />
     <Compile Include="Kunde.cs" />
+    <Compile Include="LibraryClass.cs" />
     <Compile Include="Medium.cs" />
     <Compile Include="Mitarbeiter.cs" />
     <Compile Include="Musik.cs" />

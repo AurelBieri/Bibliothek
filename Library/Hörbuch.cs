@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Hörbuch: CD, IAusleihen, IOutput
+    public class Hörbuch: CD, IAusleihen
     {
         private string _genre;
 
@@ -29,7 +29,7 @@ namespace Library
         {
             return "Hörbuch: ";
         }
-        public new string Output()
+        public override string Output()
         {
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. Genre: " + getGenre()+ " It was released in " + getErscheinungsjahr() + " Costs: " + getPreis(); ;
         }

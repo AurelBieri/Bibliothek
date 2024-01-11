@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    internal interface IAusleihen
+    internal interface IAusleihen : IOutput
     {
        double ausleihenPreis();
         int Anzahltage { get; set; }

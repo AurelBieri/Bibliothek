@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public abstract class Medium
+    public abstract class Medium : IOutput
     {
         private string _name;
         private int _artikelid;
@@ -48,5 +48,6 @@ namespace Library
             return "Medium:";
         }
 
+        public abstract string Output();
     }
 }

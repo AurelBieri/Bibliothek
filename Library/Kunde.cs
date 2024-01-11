@@ -73,7 +73,7 @@ namespace Library
         }
         public string Output()
         {
-            return getTypeInformation() + "Name: " + getVorname() + getNachname() + ", " + getAlter() + "years old, " + " with the Nr. " + getKundennr() + " has borrowed " + getAusgeliehen(); ;
+            return getTypeInformation() + "Name: " + getVorname() + "" + getNachname() + ", " + getAlter() + "Jahre alt, " + "Mit der KundenNummer" + getKundennr();
         }
     }
 }

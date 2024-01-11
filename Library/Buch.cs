@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Buch : Medium, IAusleihen, IOutput
+    public class Buch : Medium, IAusleihen
     {
         private int _anzseiten;
         private string _genre;
@@ -52,7 +52,7 @@ namespace Library
         {
             return "Book: ";
         }
-        public string Output() 
+        public override string Output() 
         {
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has "+ getAnzSeiten()+" Pages. Genre: "+ getGenre()+ " It was released in "+ getErscheinungsjahr()+" Costs: "+ getPreis(); ;
         }

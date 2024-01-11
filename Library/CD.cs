@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public abstract class CD: Medium, IAusleihen, IOutput
+    public abstract class CD: Medium, IAusleihen
     {
         private int _dauer;
         private float _preis;
@@ -41,7 +41,7 @@ namespace Library
         {
             return "CD: ";
         }
-        public string Output()
+        public override string Output()
         {
             return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes."+ " It was released in " + getErscheinungsjahr()+ " Costs: "+ getPreis(); ;
         }
