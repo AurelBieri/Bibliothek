@@ -43,7 +43,7 @@ namespace Library
         }
         public string Output()
         {
-            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes."+ "Was  released in " + getErscheinungsjahr()+ "Costs: "+ getPreis(); ;
+            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes."+ " It was released in " + getErscheinungsjahr()+ " Costs: "+ getPreis(); ;
         }
 
         public double ausleihenPreis()

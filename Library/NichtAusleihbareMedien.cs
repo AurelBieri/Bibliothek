@@ -17,7 +17,7 @@ namespace Library
         
         public string Output()
         {
-            return "Name: " + getName() + " with the Id " + getArtikelid() +  "Was  released in " + getErscheinungsjahr() +" and isn't  available."; ;
+            return "Name: " + getName() + " with the Id " + getArtikelid() +  ", was released in " + getErscheinungsjahr() +" and isn't  available."; ;
         }
     }
 }

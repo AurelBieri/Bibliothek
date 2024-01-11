@@ -48,7 +48,7 @@ namespace Library
                 }
                 else
                 {
-                    Console.WriteLine(m.getName() + "Kann nicht ausgeliehen werden.");
+                    Console.WriteLine(m.getName() + " isn't available.");
                 }
             }
         }
@@ -62,7 +62,7 @@ namespace Library
             }
             else
             {
-                Console.WriteLine(medium.getName() + "Kann nicht ausgeliehen werden.");
+                Console.WriteLine(medium.getName() + " isn't available.");
             }
             
         }

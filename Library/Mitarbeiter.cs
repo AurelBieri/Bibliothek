@@ -54,7 +54,7 @@ namespace Library
         }
         public string Output()
         {
-            return getTypeInformation() + "Name: " + getVorname() + getNachname()+", "+getAlter()+"years old, "+ " with the Id " + getMitarbeiterid() + " has a salary of " + getLohn() + " Role: " + getRolle(); ;
+            return getTypeInformation() + "Name: " + getVorname() + getNachname()+", "+getAlter()+" years old, "+ " with the Id " + getMitarbeiterid() + " has a salary of " + getLohn() + " Role: " + getRolle(); ;
         }
     }
 }

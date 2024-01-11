@@ -54,7 +54,7 @@ namespace Library
         }
         public string Output() 
         {
-            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has "+ getAnzSeiten()+" Pages. Genre: "+ getGenre()+ "Was  released in "+ getErscheinungsjahr()+"Costs: "+ getPreis(); ;
+            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has "+ getAnzSeiten()+" Pages. Genre: "+ getGenre()+ " It was released in "+ getErscheinungsjahr()+" Costs: "+ getPreis(); ;
         }
 
         public double ausleihenPreis()

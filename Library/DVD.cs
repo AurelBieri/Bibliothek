@@ -75,7 +75,7 @@ namespace Library
         }
         public string Output()
         {
-            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. With a resolution of "+getAuflösung()+". Genre: " + getGenre() + "Was  released in " + getErscheinungsjahr()+ "Costs: "+ getPreis() ; 
+            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. With a resolution of "+getAuflösung()+". Genre: " + getGenre() + " It was released in " + getErscheinungsjahr()+ " Costs: "+ getPreis() ; 
         }
 
         public double ausleihenPreis()

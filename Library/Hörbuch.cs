@@ -31,7 +31,7 @@ namespace Library
         }
         public new string Output()
         {
-            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. Genre: " + getGenre()+ "Was  released in " + getErscheinungsjahr() + "Costs: " + getPreis(); ;
+            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes. Genre: " + getGenre()+ " It was released in " + getErscheinungsjahr() + " Costs: " + getPreis(); ;
         }
 
     }

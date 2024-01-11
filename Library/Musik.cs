@@ -42,7 +42,7 @@ namespace Library
         }
         public new string Output()
         {
-            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes." + "Was  released in " + getErscheinungsjahr() + "Costs: " + getPreis()+ "Singer: "+ getSänger()+"Style of music: "+getMusikstil(); ;
+            return getTypeInformation() + "Name: " + getName() + " with the Id " + getArtikelid() + " has a duration of " + getDauer() + " Minutes." + " It was released in " + getErscheinungsjahr() + " Costs: " + getPreis()+ " Singer: "+ getSänger()+" Style of music: "+getMusikstil(); ;
         }
     }
 }
