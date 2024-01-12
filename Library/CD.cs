@@ -54,7 +54,7 @@ namespace Library
             }
             else
             {
-                return (Anzahltage * 5.0) / 10.0;
+                return (Anzahltage * 5.0) / 100.0;
             }
         }
     }

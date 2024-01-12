@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Library;
 using NUnit.Framework;
 
@@ -11,7 +12,8 @@ namespace ClassLibrary2
     [TestFixture]
     public class TestAusleihen
     {
-        [Test]
+
+		[Test]
         public void TestausleihenPreis1()
         {
             DVD d1 = new DVD("TestBuch Version 2", 1, 2021, 120, "HD", "action", 20);
@@ -49,5 +51,21 @@ namespace ClassLibrary2
 
             Assert.That(result, Is.EqualTo(0.78));
         }
-    }
+
+
+		[Test]
+		public void TestausleihenPreis4()
+        {
+            Musik m1 = new Musik("dakfdöakd", 1, 2021, 3, 3, "test", "musik");
+
+			Kunde k1 = new Kunde("Aurel", "Bieri", 16, 1);
+
+			k1.addAusgelhiehen(m1, 50);
+
+			double result = m1.ausleihenPreis();
+
+			Assert.That(result, Is.EqualTo(2.5));
+		}
+
+	}
 }
