@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestKundeAddAusgelhiehen.cs" />
     <Compile Include="TestAusleihen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Testoutput.cs" />
