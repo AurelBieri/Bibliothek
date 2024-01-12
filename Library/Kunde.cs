@@ -43,8 +43,16 @@ namespace Library
             {
                 if(m is IAusleihen ausleihenMedium)
                 {
-                    _ausgeliehen.Add(m);
-                    ausleihenMedium.Anzahltage = anzahltage;
+                    if (!((IAusleihen)m).IstAusgeliehen)
+                    {
+                        _ausgeliehen.Add(m);
+                        ausleihenMedium.Anzahltage = anzahltage;
+                        ausleihenMedium.IstAusgeliehen = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine(m.getName() + " ist schon ausgeliehen.");
+                    }
                 }
                 else
                 {
@@ -57,8 +65,16 @@ namespace Library
         {
             if(medium is IAusleihen ausleihenMedium)
             {
-                _ausgeliehen.Add(medium);
-                ausleihenMedium.Anzahltage = anzahltage;
+                if (!((IAusleihen)medium).IstAusgeliehen)
+                {
+                    _ausgeliehen.Add(medium);
+                    ausleihenMedium.Anzahltage = anzahltage;
+                    ausleihenMedium.IstAusgeliehen = true;
+                }
+                else
+                {
+                    Console.WriteLine(medium.getName() + " ist schon ausgeliehen.");
+                }
             }
             else
             {

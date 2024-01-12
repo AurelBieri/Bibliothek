@@ -12,6 +12,7 @@ namespace Library
         private string _genre;
         private float _preis;
         public int Anzahltage { get; set; } //Diese Muss Public sein, da sie von dem Interface aus kommt.
+        public bool IstAusgeliehen { get; set; } //Diese Muss Public sein, da sie von dem Interface aus kommt.
 
         public Buch(string name, int artikelid, int erscheinungsjahr, int anzseiten, string genre, float preis) : base(name, artikelid, erscheinungsjahr)  
         {

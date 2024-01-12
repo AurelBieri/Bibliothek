@@ -9,6 +9,7 @@ namespace Library
     internal interface IAusleihen : IOutput
     {
        double ausleihenPreis();
-       int Anzahltage { get; set; }
+       int Anzahltage { get; set; } 
+       bool IstAusgeliehen { get; set; }
     }
 }
