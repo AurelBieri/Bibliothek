@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Hörbuch: CD, IAusleihen
+    public class Hörbuch: CD
     {
         private string _genre;
 

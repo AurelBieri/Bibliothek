@@ -62,10 +62,17 @@ namespace Library
                 foreach(IAusleihen i in k.getAusgeliehen())
                 {
                     Console.WriteLine(i.Output());
-                    Console.WriteLine($"Dieser Artikel kostet für das Ausleihen von {i.Anzahltage} Tagen {i.ausleihenPreis()} Franken" );
+                    Console.WriteLine($"This article costs {i.ausleihenPreis()} francs to borrow for  {i.Anzahltage} days." );
                     Console.WriteLine("---");
                 }
             }
-        }
+			Console.WriteLine("\n\nAlle Mitarbeiter");
+			Console.WriteLine("----------------------------------------------------------------------------");
+			foreach (Mitarbeiter m in AlleMitarbeiter)
+			{
+				Console.WriteLine(m.Output());
+                Console.WriteLine("----");
+			}
+		}
     }
 }

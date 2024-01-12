@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Library.DVD">
+    <Position X="15.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QARAQAgAgAAAgAAAiAgMABAAAAAAAAAAAAAQCAEEAEA=</HashCode>
+      <FileName>DVD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Library.Hörbuch">
+    <Position X="17.5" Y="11.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAgAgAAAAAAAAAAIABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hörbuch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.Kunde">
+    <Position X="11.5" Y="11.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAACAAAAAAAAAAIAABAAIAAAAgAAIAAAAgAAAE=</HashCode>
+      <FileName>Kunde.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Library.LibraryClass">
+    <Position X="14.25" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAQgAAAAAAAAAAAAAAIAAAAAAAQICAAAAAAAAAAAAA=</HashCode>
+      <FileName>LibraryClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.Medium">
+    <Position X="19.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAIAAAAAAAAAAAAABIAAAAAAAACIRAABAEAAAAAAA=</HashCode>
+      <FileName>Medium.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Library.Mitarbeiter">
+    <Position X="7.75" Y="11.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAEAAAAQAAAAAAAAAgIhABAAAAEAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Mitarbeiter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Library.Musik">
+    <Position X="20.5" Y="11.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAIAAAAgAAAAAAAAIAIAAAIAAAAAIAAAAAAAAAAg=</HashCode>
+      <FileName>Musik.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.NichtAusleihbareMedien">
+    <Position X="25.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NichtAusleihbareMedien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.Person">
+    <Position X="9.75" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAACAAAAAAABAAAAAACAAAAgAIAAAAAAAEAgBAgA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.CD">
+    <Position X="19" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAQAAAAAAAAAAACAgMAAAAAAAAAAAAAAAQAAEEAEA=</HashCode>
+      <FileName>CD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Library.Buch">
+    <Position X="23" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAQAgAgAAAAAAAAAgMABAAQAAAAAAAAAQQAAEAAAA=</HashCode>
+      <FileName>Buch.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Library.IAusleihen">
+    <Position X="23.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IAusleihen.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Library.IOutput">
+    <Position X="23.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IOutput.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

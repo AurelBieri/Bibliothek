@@ -10,8 +10,6 @@ namespace Library
     {
         public NichtAusleihbareMedien(string name, int artikelid, int erscheinungsjahr) : base(name, artikelid, erscheinungsjahr)
         {
-            
-
         }
 
         

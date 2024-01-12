@@ -30,9 +30,13 @@ namespace Library
 
             Kunde  k1 = new Kunde("Aurel", "Bieri", 16, 1);
             Kunde k2 = new Kunde("Larissa", "Fahrni", 16, 2);
+			Mitarbeiter mi1 = new Mitarbeiter("Peter", "bucher", 30, 1, 3500, "Kasse");
+			Mitarbeiter mi2 = new Mitarbeiter("Tom", "bucher", 40, 2, 4000, "Manager");
 
-            library.AddKunde(k1);
+			library.AddKunde(k1);
 			library.AddKunde(k2);
+			library.AddMitarbeiter(mi1);
+			library.AddMitarbeiter(mi2);
 
 			k1.addAusgelhiehen(b1, 6);
 			k1.addAusgelhiehen(D1, 36);
