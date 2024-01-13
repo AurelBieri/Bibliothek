@@ -43,6 +43,9 @@ namespace Library
 
         public void  Output()
         {
+            Console.WriteLine("Bibliothek Übersicht");
+            Console.WriteLine("---------------------------------------------------------------------------------\n \n");
+
             if (AlleMedien.OfType<IAusleihen>().Any())
             {
                 Console.WriteLine("Alle Ausleihbaren Medien");
