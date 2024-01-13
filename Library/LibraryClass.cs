@@ -17,14 +17,28 @@ namespace Library
             AlleMedien.Add(m);
         }
 
+        public List<Medium> GetMedium()
+        {
+            return AlleMedien;
+        }
+
         public void AddKunde(Kunde k)
         {
             AlleKunden.Add(k);
+        }
+        public List<Kunde> GetKunde()
+        {
+            return AlleKunden;
         }
 
         public void AddMitarbeiter(Mitarbeiter m)
         {
             AlleMitarbeiter.Add(m);
+        }
+
+        public List<Mitarbeiter> GetMitarbeiter()
+        {
+            return AlleMitarbeiter;
         }
 
         public void  Output()
